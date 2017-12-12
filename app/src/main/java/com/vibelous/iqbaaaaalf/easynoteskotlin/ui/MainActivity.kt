@@ -42,7 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         mRecycleView.adapter = mAdapter
 
-
         mViewModel.noteList.observe(this, Observer<List<NoteEntity>> {
             noteList ->
             if(noteList != null) {
@@ -52,16 +51,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         fab.setOnClickListener { view ->
-            mViewModel.addNote(addSingleNote())
+            mViewModel.addNote()
             Snackbar.make(view, "Successfully Add Note", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }
 
-    fun addSingleNote(): NoteEntity{
-        counter++
-        var data: NoteEntity = NoteEntity("judul "+counter, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus maximus nisl, sit amet congue odio fermentum in. Integer ut risus sit amet nunc pretium lacinia vitae id risus. Duis non magna mauris. Sed rhoncus felis non eros vulputate, a aliquam metus malesuada. Donec gravida augue ut nibh rutrum, sit amet rutrum nunc molestie. Curabitur convallis ullamcorper euismod. Donec ante ipsum, ornare eget consequat pellentesque, rhoncus in eros. Sed tempus, augue sit amet vehicula vehicula, sapien est accumsan purus.",
-                "#Kategori")
-        return data
-    }
 }

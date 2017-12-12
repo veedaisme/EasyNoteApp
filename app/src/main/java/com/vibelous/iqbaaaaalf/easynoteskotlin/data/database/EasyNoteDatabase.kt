@@ -7,9 +7,7 @@ import android.content.Context
  * Created by iqbaaaaalf on 12/10/2017.
  */
 @Database(entities = arrayOf(NoteEntity::class), version = 1)
-@TypeConverters(DateConverter::class)
 abstract class EasyNoteDatabase : RoomDatabase() {
-
     abstract val noteDao: NoteDao
 
     companion object {

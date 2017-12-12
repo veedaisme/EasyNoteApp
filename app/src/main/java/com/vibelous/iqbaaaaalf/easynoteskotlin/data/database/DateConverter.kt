@@ -7,15 +7,13 @@ import java.util.*
  * Created by iqbaaaaalf on 12/10/2017.
  */
 class DateConverter{
-    companion object {
         @TypeConverter
-        fun toDate(value: Long?): Date?{
+        fun toDate(value: Long?): Date? {
             return if (value == null) null else Date(value)
         }
 
         @TypeConverter
-        fun toTimeStamp(value: Date): Long {
-            return value.time
+        fun toTimeStamp(value: Date?): Long? {
+            return if(value == null) null else value.time
         }
-    }
 }
