@@ -13,8 +13,5 @@ class Util {
             calendar.add(Calendar.DATE, day)
             return calendar.time
         }
-
-        fun ClosedRange<Int>.random() =
-                Random().nextInt(endInclusive - start) +  start
     }
 }
