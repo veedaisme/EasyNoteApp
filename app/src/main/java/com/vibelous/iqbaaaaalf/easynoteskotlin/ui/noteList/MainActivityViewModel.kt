@@ -16,18 +16,11 @@ class MainActivityViewModel(noteDao: NoteDao, executor: AppExecutors) : ViewMode
 
     val TAG: String = this.javaClass.simpleName
     var noteList: LiveData<List<NoteEntity>>
-    var mDao: NoteDao = noteDao
-    var mExecutor: AppExecutors = executor
+    val mDao: NoteDao = noteDao
+    val mExecutor: AppExecutors = executor
 
     init {
         noteList = getAllNotes()
-    }
-
-    fun addNote(){
-        mExecutor.diskIO.execute {
-            mDao.insertNote(getSampleNote())
-            Log.d(TAG, "New note added")
-        }
     }
 
     fun getAllNotes(): LiveData<List<NoteEntity>>{
