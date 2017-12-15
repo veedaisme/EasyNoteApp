@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/toolbar_add"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="enterAlways|scroll"
+    app:layout_collapseMode="pin"
+    app:titleTextColor="@color/textColor">
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_title_add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginRight="?attr/actionBarSize"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/textColor"-->
+            <!--android:text="New Note"-->
+            <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"-->
+            <!--/>-->
+        <!---->
+    <!--</FrameLayout>-->
+
+</android.support.v7.widget.Toolbar>

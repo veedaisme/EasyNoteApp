@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vibelous.iqbaaaaalf.easynoteskotlin.ui.noteAdd.NoteAddActivity"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_add"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="enterAlways|scroll"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="@color/textColor"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_addTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:hint="@string/title_placeholder"
+                android:textColorHint="@color/hintTextColor"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/textColor"
+                android:textCursorDrawable="@null"/>
+
+            <EditText
+                android:id="@+id/et_addBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="@string/body_placeholder"
+                android:textColorHint="@color/hintTextColor"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/textColor"
+                android:textCursorDrawable="@null">
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

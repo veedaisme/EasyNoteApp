@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.vibelous.iqbaaaaalf.easynoteskotlin.R
 import com.vibelous.iqbaaaaalf.easynoteskotlin.data.database.NoteEntity
+import com.vibelous.iqbaaaaalf.easynoteskotlin.util.Util
 import java.text.SimpleDateFormat
 import java.util.logging.Handler
 import java.util.logging.SimpleFormatter
@@ -58,8 +59,7 @@ class NoteListAdapter() : RecyclerView.Adapter<NoteListAdapter.ViewHolder>() {
             val tvCategory: TextView = itemView.findViewById(R.id.tv_category)
             val tvDueDate: TextView = itemView.findViewById(R.id.tv_dueDate)
 
-            val sdf: SimpleDateFormat = SimpleDateFormat("dd/MM")
-            val dateString: String = sdf.format(items[position].dueAt)
+            val dateString = Util.getDayMonthString(items[position].dueAt)
 
             tvTitle.text = items[position].mTitle
             tvNote.text = items[position].mDescription

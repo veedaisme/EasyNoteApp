@@ -1,4 +1,4 @@
-package com.vibelous.iqbaaaaalf.easynoteskotlin.ui
+package com.vibelous.iqbaaaaalf.easynoteskotlin.ui.noteList
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider

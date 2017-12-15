@@ -1,11 +1,9 @@
-package com.vibelous.iqbaaaaalf.easynoteskotlin.ui
+package com.vibelous.iqbaaaaalf.easynoteskotlin.ui.noteList
 
 import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import android.util.Log
 import com.vibelous.iqbaaaaalf.easynoteskotlin.AppExecutors
-import com.vibelous.iqbaaaaalf.easynoteskotlin.data.EasyNoteRepository
 import com.vibelous.iqbaaaaalf.easynoteskotlin.data.database.NoteDao
 import com.vibelous.iqbaaaaalf.easynoteskotlin.data.database.NoteEntity
 import com.vibelous.iqbaaaaalf.easynoteskotlin.util.Util
