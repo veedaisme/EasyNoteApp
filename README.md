@@ -1,7 +1,7 @@
 # EasyNoteApp
 
 ```
-Simple Note App just for implementing what i've learn so far
+Simple Note App just for implementing what i recently learn
 ```
 ## What i used in this project
 
@@ -12,12 +12,12 @@ Simple Note App just for implementing what i've learn so far
 
 ## Current State of This Project ##
 
-* Only display a list of note and have a function to add a notes with default notes data.
+* Only display a list of note and have a function to add a notes.
 
 ## Next move ##
-1. create "Add Note" Activity and OnClick functionality in each note
+1. create display detail notes and edit page
 
 ## P.S : tell me your opinion about this project
 ```
-so i can learn more about new things in Android Development
+so i can learn more about new things in Android Development 
 ```
