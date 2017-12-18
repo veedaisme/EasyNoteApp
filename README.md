@@ -12,10 +12,10 @@ Simple Note App just for implementing what i recently learn
 
 ## Current State of This Project ##
 
-* Only display a list of note and have a function to add a notes.
+* Display a list of note, create new note, display note detail.
 
 ## Next move ##
-1. create display detail notes and edit page
+1. create edit page and delete functionality in recycleView and then basic crud done
 
 ## P.S : tell me your opinion about this project
 ```
